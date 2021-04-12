@@ -1,0 +1,9 @@
+plugins {
+    id 'java-library'
+}
+
+// Sets Java compatibility to Java 8 for android
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+apply from: "${rootProject.projectDir}/buildSrc/upload-java.gradle"
