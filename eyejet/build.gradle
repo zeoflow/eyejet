@@ -24,6 +24,11 @@ dependencies {
     implementation project(":eyejet-arch")
     api project(":eyejet-annotation")
 
+    // Dependencies from maven
+//    def eyejet_version = "1.0.2"
+//    implementation("com.zeoflow:eyejet-arch:$eyejet_version")
+//    api("com.zeoflow:eyejet-annotation:$eyejet_version")
+
     implementation("com.zeoflow:flow-kit:1.5.1")
 
     implementation("androidx.lifecycle:lifecycle-common-java8:2.3.1")

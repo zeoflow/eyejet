@@ -104,15 +104,11 @@ def includeProject(name, filePath, List<BuildType> filter = []) {
 }
 
 // Demo Module - App
-include ':app'
-//includeProject(":app", "app")
+includeProject(":app", "app")
 
 // Eyejet Lib Components
-include ':eyejet'
-include ':eyejet-annotation'
-include ':eyejet-arch'
-//includeProject(":eyejet", "eyejet")
-//includeProject(":eyejet-annotation", "eyejet-annotation")
-//includeProject(":eyejet-arch", "eyejet-arch")
+includeProject(":eyejet", "eyejet")
+includeProject(":eyejet-annotation", "eyejet-annotation")
+includeProject(":eyejet-arch", "eyejet-arch")
 
 rootProject.name = "Eyejet"
