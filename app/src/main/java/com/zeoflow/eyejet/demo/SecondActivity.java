@@ -9,12 +9,13 @@ import androidx.annotation.Nullable;
 import com.zeoflow.app.Activity;
 import com.zeoflow.eyejet.Eyejet;
 import com.zeoflow.eyejet.EyejetField;
+import com.zeoflow.eyejet.annotation.EyejetScope;
 import com.zeoflow.eyejet.annotation.ShareProperty;
 import com.zeoflow.eyejet.annotation.ShareType;
 
 import java.util.Random;
 
-@UserScope
+@EyejetScope
 public class SecondActivity extends Activity
 {
 
