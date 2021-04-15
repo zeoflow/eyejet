@@ -83,7 +83,6 @@ public class Eyejet
                         if (shareProperty.shareType()[0] == ShareType.ON_FIRST_USE)
                         {
                             store.clearField(annotation, value);
-                            System.out.println("heerWeAre");
                         }
                     } else
                     {
@@ -112,8 +111,7 @@ public class Eyejet
                     if (!store.checkContainsEyejetLifecycleObserver(
                             annotation,
                             lifecycleOwner.toString()
-                    )
-                    )
+                    ))
                     {
                         lifecycleOwner.getLifecycle().addObserver(observer);
                         store.getLifecycleObserverStack(annotation).push(observer);
@@ -129,6 +127,10 @@ public class Eyejet
      */
     public static boolean checkAnnotatedEyejetScope(Annotation annotation)
     {
+        if (annotation.annotationType().getName().equals(EyejetScope.class.getName()))
+        {
+            return true;
+        }
         for (Annotation s : annotation.annotationType().getAnnotations())
         {
             if (s.annotationType().getName().equals(EyejetScope.class.getName()))
