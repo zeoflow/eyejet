@@ -25,7 +25,7 @@ dependencies {
     api project(":eyejet-annotation")
 
     // Dependencies from maven
-//    def eyejet_version = "1.0.2"
+//    def eyejet_version = "1.0.3"
 //    implementation("com.zeoflow:eyejet-arch:$eyejet_version")
 //    api("com.zeoflow:eyejet-annotation:$eyejet_version")
 
